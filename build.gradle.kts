@@ -21,3 +21,8 @@ allprojects {
         
     }
 }
+
+tasks{
+    val holaMundo by registering(HolaMundo::class)
+    getByPath(":app:assembleDebug").finalizedBy(holaMundo)
+}
