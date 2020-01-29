@@ -24,5 +24,7 @@ allprojects {
 
 tasks{
     val holaMundo by registering(HolaMundo::class)
+    val openFolder by registering(OpenFolder::class)
     getByPath(":app:assembleDebug").finalizedBy(holaMundo)
+    getByPath(":app:assembleRelease").finalizedBy(openFolder)
 }

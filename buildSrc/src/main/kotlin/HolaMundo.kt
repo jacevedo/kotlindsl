@@ -3,7 +3,7 @@ import org.gradle.api.tasks.TaskAction
 
 open class HolaMundo : DefaultTask(){
     init {
-        group = "Hola Mundo"
+        group = "meetup"
         description = "Task para decir hola"
     }
 
