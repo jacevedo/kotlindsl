@@ -25,7 +25,7 @@ android {
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar","*.aar"))))
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlinVersion}")
     implementation("androidx.appcompat:appcompat:1.1.0")
     implementation("androidx.core:core-ktx:1.1.0")
     implementation("androidx.constraintlayout:constraintlayout:1.1.3")
